@@ -7,3 +7,10 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+serde_json = "1.0"
+
+iced = { git = "https://github.com/hecrj/iced/", branch = "master", features=["canvas", "async-std"] }
+iced_futures = { git = "https://github.com/hecrj/iced/", branch = "master", features=["async-std"] }
+iced_native = { git = "https://github.com/hecrj/iced/", branch = "master" }
+async-std = "0.99.3"
+futures = "0.3.8"
